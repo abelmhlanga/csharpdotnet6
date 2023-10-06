@@ -9,6 +9,13 @@ public interface IPerson {
 
 //classes - reference types
 public class Employee : IPerson { 
+    //public Employee()
+    //{}//default
+    public Employee (string firstname, string lastname)
+    {
+        LastName = firstname;
+        LastName = lastname;
+    }       
     public string LastName { get; set; } 
     public int Id { get; set; } 
     public Age Age { get; set; } 
@@ -22,6 +29,8 @@ public class Employee : IPerson {
 
 public class Manager : Employee, IPerson 
 {
+    public Manager(string firstname, string lastname): base(firstname, lastname)
+    {}
     public int NumberOfDirectReports { get; set; }
 }
 
