@@ -13,7 +13,7 @@ public class Employee : IPerson {
     {}//default
     public Employee (string firstname, string lastname)
     {
-        LastName = firstname;
+        FirstName = firstname;
         LastName = lastname;
     }       
     public string LastName { get; set; } 
