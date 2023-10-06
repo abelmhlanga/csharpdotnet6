@@ -9,8 +9,8 @@ public interface IPerson {
 
 //classes - reference types
 public class Employee : IPerson { 
-    //public Employee()
-    //{}//default
+    public Employee()
+    {}//default
     public Employee (string firstname, string lastname)
     {
         LastName = firstname;
